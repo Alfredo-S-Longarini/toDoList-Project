@@ -15,7 +15,7 @@ const Task = ({ taskObject }) => {
 
             <section>
                 <p className=' font-light text-gray-400'>{taskObject.date}</p>
-                <p className=' font-extrabold text-red-700'><button onClick={() => dispatch(deleteNote(note))}>X</button></p>
+                <p className=' font-extrabold text-red-700'><button onClick={() => dispatch(deleteNote(taskObject))}>X</button></p>
             </section>
             
         </div>

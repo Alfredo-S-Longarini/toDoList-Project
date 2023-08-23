@@ -9,7 +9,7 @@ const EmptyList = () => {
 
             <div className='logoSection'>
                 <img src="/img/logoDontTask.svg" alt="dontTasks" />
-                <p>Sin tareas terminadas</p>
+                <p>Sin tareas</p>
             </div>
         </div>
     )
