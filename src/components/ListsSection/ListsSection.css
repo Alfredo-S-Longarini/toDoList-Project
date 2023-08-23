@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .tableContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .tableContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    margin: 0 40px;
+  }
+}

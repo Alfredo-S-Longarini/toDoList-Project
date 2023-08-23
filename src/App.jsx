@@ -5,10 +5,15 @@ import NotesListContainer from './components/NotesListContainer/NotesListContain
 function App() {
 
   return (
-    <div className='appContainer grid'>
-        <NavBar/>
+    <div className='appContainer'>
+      <div>
+        < NavBar />
+      </div>
 
-        <NotesListContainer/>
+      <div>
+        <NotesListContainer />
+      </div>
+
     </div>
   )
 }

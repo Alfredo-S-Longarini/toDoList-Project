@@ -1,15 +1,17 @@
 import React from 'react'
+import { Table } from 'reactstrap'
+import "./EmptyList.css"
 
 const EmptyList = () => {
     return (
-        <tr>
-            <th scope="row">
-                vacio
-            </th>
-            <td>
-                vacio
-            </td>
-        </tr>
+        <div className='dontTasks'>
+            <h2 className=''>Hechas</h2>
+
+            <div className='logoSection'>
+                <img src="/img/logoDontTask.svg" alt="dontTasks" />
+                <p>Sin tareas terminadas</p>
+            </div>
+        </div>
     )
 }
 

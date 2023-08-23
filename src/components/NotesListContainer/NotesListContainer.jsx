@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Input, Button, ButtonGroup } from 'reactstrap'
-import TableNotes from '../TableNotes/TableNotes'
 import { useDispatch } from 'react-redux'
 import { addNote, readNotes } from '../../redux/noteSlice'
 import { v4 as uuidv4 } from 'uuid';
+
+import "./NotesListContainer.css"
+import ListsSection from '../ListsSection/ListsSection'
 
 const NotesListContainer = () => {
 
@@ -43,10 +45,11 @@ const NotesListContainer = () => {
   })
 
   return (
-    <div className=' flex flex-col justify-center items-center my-4 gap-5'>
-      <h1 className=' text-5xl font-semibold'>ToDoList [422]</h1>
+    <div className=' layout items-center'>
 
-      <section className=' flex flex-col justify-center items-center gap-3'>
+      <section className=' inputContainer flex flex-col justify-center items-center gap-3'>
+
+        <h1 className=' text-5xl font-semibold'>ToDoList [422]</h1>
 
         <section className='inputTask flex gap-1'>
 
@@ -87,8 +90,8 @@ const NotesListContainer = () => {
 
       </section>
 
-      <section className='notesContainer border-t-2'>
-        < TableNotes />
+      <section className=' notesContainer bg-orange-300'>
+        <ListsSection />
       </section>
     </div>
   )

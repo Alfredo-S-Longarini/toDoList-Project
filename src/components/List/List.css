@@ -1,0 +1,25 @@
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .list{
+        margin: 20px 20px;
+    }
+  
+    .list h2{
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .list{
+        margin: 20px 0;
+    }
+  
+    .list h2{
+        font-size: 26px;
+        text-align: center;
+    }
+}
